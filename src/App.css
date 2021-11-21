@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 220px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+Carousel{
+    padding-left: 100px;
+    grid-area: Carousel;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color:#011627;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+article{
+    display: grid;
+    grid-auto-rows: 0.2fr 0.8fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:"header header header header header"
+                        "Carousel Carousel Carousel Carousel Carousel"
+                        "meio meio meio meio meio"
+                        "footer footer footer footer footer"
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+meio{
+    padding-left: 300px;
+    grid-area: meio;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+footer{
+    font-family: Time, "Times New Roman", Georgia, serif;
+    display: grid;
+    grid-area: footer;
+    padding-left: 300px;
+    background-color: #011627;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "LC LC LC LC LC"
+                         "SP RJ bt crt prd"
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Procura{
+    height: 30px;
+    padding-top: 18px;
+}
+
+
+.Digitar{
+    width: 200px;
+    border: none;
+    border-bottom:2px solid #7A7A7A;
+}
+
+.escrita{
+    padding-top: 15px;
+    padding-left: 150px;
+    margin-left: 15px;
+}
+
+
+.SP{
+    color: #FFFFFF;
+    grid-area: SP;
+}
+
+.RJ{
+    color: #FFFFFF;
+    grid-area: RJ;
+}
+
+.LC{
+    color: #FFFFFF;
+    grid-area: LC;
+}
+
+.localization{
+
+    bottom: 127px;
+    width: 50px;
+    height: 0px;
+    left: 380px;
+
+    border: 5px solid #FF9F1C;
+
+}
+
+.BCont{
+    grid-area: bt;
+    width: 287px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    background-color: #FF9F1C;
+    text-align: center;
+    line-height:60px;
+    height: 62px;
+}
+
+.BCons{
+    grid-area: bc;
+    width: 287px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    background-color: #FF9F1C;
+    text-align: center;
+    height: 60px;
+    line-height:55px;
+}
+
+.created{
+    padding-top: 100px;
+    color:#FFFFFF;
+    padding-left: 160px;
+    grid-area: crt;
+}
+
+.power{
+    padding-top: 100px;
+    color:#FFFFFF;
+    padding-left: 10px;
+    grid-area: prd;
+}
+
+.LinhaH{
+    align-self: center;
+    height: 40px;
+    border-left: thick solid #7A7A7A;
+}
+
+.Imagee{
+    height:301px;
+    width: 1100px;
+
+}
+
+.textin{
+    color: #FFFFFF;
 }

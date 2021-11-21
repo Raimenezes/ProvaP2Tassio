@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import {Component} from "react";
+import './App.css'
+import Cabecalho from "./Header";
+import Rodaper from "./Rodaper";
+import Carousel from "./imagens"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class Home extends Component{
+
+    render() {
+        return (
+            <article>
+                <Cabecalho/>
+                <Carousel/>
+                <meio>
+                    <h1>Produtos</h1>
+                </meio>
+                <Rodaper/>
+            </article>
+        );
+    }
 }
-
-export default App;
